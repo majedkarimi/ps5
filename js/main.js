@@ -1,13 +1,11 @@
-$(document).ready(function(){
-    $('.image-header').click(function(){
-        $('.show-sub').css({
-            'visibility': 'visible',
-            'opacity': '1',
-            'top': '46px'
-        });
-        $('.show-sub').toggle(50);
-        $('show-sub').animate({
-            opacity: ".5"
-        });
-    });
+const btnOpenProfile = document.querySelector(".image-header");
+const boxProfile = document.querySelector(".show-sub");
+btnOpenProfile.addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("acition");
+  if (boxProfile.classList.contains("show")) {
+    boxProfile.classList.remove("show");
+  } else {
+    boxProfile.classList.add("show");
+  }
 });

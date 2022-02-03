@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  direction: ltr;
+  /* background-image: url(img/bg-spider-man.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #333; */
+}
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+/*-----------------------------------------------------
+# header
+-----------------------------------------------------*/
+/*********************/
+.header {
+  float: right;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.container {
+  width: 88%;
+  margin: auto;
+}
+
+.header .profile-header {
+  float: right;
+}
+
+.header .profile-header > ul > li {
+  float: right;
+  list-style: none;
+  padding: 0 23px;
+  position: relative;
+}
+
+.header .profile-header .time-header {
+  color: #fff;
+  font-size: 23px;
+  margin-left: 35px;
+}
+
+.header .profile-header .image-header a figure {
+  position: relative;
+}
+
+.header .profile-header .image-header a figure img {
+  border-radius: 50%;
+  max-width: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.header .profile-header .image-header a figure span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #13f88b;
+  border-radius: 50%;
+  top: 22px;
+  right: -1px;
+}
+
+.header .profile-header .icon-header {
+  font-size: 20px;
+}
+
+.header .profile-header .icon-header i {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.header .profile-header .icon-header i:hover {
+  color: #adadad;
+}
+
+.header .profile-header .image-header a figure img:hover {
+  opacity: 0.7;
+}
+
+.header .profile-header > ul > li ul {
+  position: absolute;
+  width: 286px;
+  background: #1d2125;
+  top: 55px;
+  left: -85px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+}
+
+.header .profile-header > ul > li ul li {
+  list-style: none;
+}
+
+.header .profile-header > ul > li ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 12px 20px;
+  border: 1px solid #242a2f;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.drop-down {
+  position: absolute;
+  width: 286px;
+  background: #1d2125;
+  top: 55px;
+  left: -85px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+}
+.header .profile-header > ul > li ul li a i {
+  margin-right: 10px;
+}
+
+.header .profile-header > ul > li ul li a:hover {
+  border: 1px solid #aea5ae;
+}
+
+/* .header .profile-header>ul>li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 46px;
+
+} */
+
+.select-header {
+  float: left;
+}
+
+.select-header li {
+  list-style: none;
+  float: left;
+  margin-right: 35px;
+}
+
+.select-header li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.select-header li a span {
+  color: rgb(187 178 169);
+}
+/*-----------------------------------------------------
+# slider
+-----------------------------------------------------*/
+.slider {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.slider .image-slider {
+  float: left;
+}
+
+.slider .image-slider img {
+  width: 83px;
+  margin-right: 6px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.slider .image-slider figure img {
+  width: 113px;
+  border: 2px solid #aea5ae;
+  position: relative;
+}
+
+.slider .image-slider figure span {
+  position: absolute;
+  top: 159px;
+  left: 309px;
+  color: #d2cdc9;
+  font-size: 20px;
+}
+
+.slider .image-slider img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/*-----------------------------------------------------
+# button
+-----------------------------------------------------*/
+.btn-home {
+  width: 100%;
+  float: right;
+  margin-top: 249px;
+}
+
+.btn-home a {
+  margin-left: 176px;
+  background: #484745;
+  display: inline-block;
+  padding: 7px 99px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins";
+  border-radius: 29px;
+}
+
+.btn-home i {
+  margin-left: 10px;
+  background: #484745;
+  padding: 12px 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.btn-home a:hover,
+.btn-home i:hover {
+  background: #3e3d3b;
+  cursor: pointer;
+}
+
+/*-----------------------------------------------------
+# profile
+-----------------------------------------------------*/
+.profile-body {
+  direction: ltr;
+  background-image: url(img/profile\ background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+.select-profile {
+  width: 100%;
+  float: right;
+}
+
+.select-profile .menu-profile {
+  width: 49%;
+  float: left;
+  margin-left: 208px;
+  margin-top: 28px;
+}
+
+.select-profile .menu-profile ul {
+}
+
+.select-profile .menu-profile ul li {
+  list-style: none;
+}
+
+.select-profile .menu-profile ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 200;
+  border-bottom: 1px solid #5a504f;
+  display: block;
+  padding: 13px 0;
+}
+
+.select-profile .menu-profile ul li a:hover {
+  border-bottom: 1px solid #9f9a9d;
+  font-size: 18px;
+}
+
+.select-profile-header {
+  width: 50%;
+  float: left;
+}
+
+.select-profile-header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 33px;
+  font-weight: 200;
+}

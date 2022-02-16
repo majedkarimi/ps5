@@ -10,10 +10,11 @@ a {
 
 body {
   direction: ltr;
-  /* background-image: url(img/bg-spider-man.png); */
+  background-image: url(img/bg-spider-man.png);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Poppins", sans-serif;
+  height: 100vh;
   /* background-color: #333; */
 }
 .show {
